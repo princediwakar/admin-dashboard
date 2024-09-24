@@ -33,7 +33,7 @@ export const CommandMenu = ({
 		document.addEventListener("keydown", down);
 		return () =>
 			document.removeEventListener("keydown", down);
-	}, []);
+	}, [setOpen]);
 
 	return (
 		<Command.Dialog
@@ -59,7 +59,7 @@ export const CommandMenu = ({
 					<Command.Empty>
 						No results found for{" "}
 						<span className="text-violet-500">
-							"{value}"
+							&quot{value}&quot
 						</span>
 					</Command.Empty>
 

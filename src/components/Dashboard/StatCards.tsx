@@ -69,7 +69,7 @@ const Card = ({
 						<FiTrendingUp />
 					) : (
 						<FiTrendingDown />
-					)}
+					)} {pillText}
 				</span>
 			</div>
 			<p className="text-xs text-stone-500">
